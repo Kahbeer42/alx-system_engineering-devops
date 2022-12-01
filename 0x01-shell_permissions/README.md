@@ -1,1 +1,1 @@
-My shell permission file
+group readme file
