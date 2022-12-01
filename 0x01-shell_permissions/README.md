@@ -1,1 +1,1 @@
-group readme file
+my symbolic links readme file
