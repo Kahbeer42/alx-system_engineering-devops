@@ -24,8 +24,4 @@ Requirements:
 
 You must use the while loop (for and until are forbidden)
 
-Write a Bash script that displays Best School 10 times.
-
-Requirements:
-
-You must use the until loop (for and while are forbidden)
+Write a Bash script that displays Best School 10 time
