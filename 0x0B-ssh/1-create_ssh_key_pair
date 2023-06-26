@@ -1,3 +1,4 @@
-#!/usr/bin/env bash
-# Creates an RSA key pair with the passphrase betty
+!/usr/bin/env bash
+# create a pair of ssh where betty is the pswd
+# 4096 the bits to create
 ssh-keygen -f school -b 4096 -N betty
