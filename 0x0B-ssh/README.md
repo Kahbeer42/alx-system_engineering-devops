@@ -26,4 +26,8 @@ Let’s practice using Puppet to make changes to our configuration file. Just as
 Requirements:
 
 Your SSH client configuration must be configured to use the private key ~/.ssh/school
-Your SSH client configuration must be configured to refuse to authenticate using a passwordd
+Your SSH client configuration must be configured to refuse to authenticate using a password
+
+Now that you have successfully connected to your server, we would also like to join the party.
+
+Add the SSH public key below to your server so that we can connect using the ubuntu user.
