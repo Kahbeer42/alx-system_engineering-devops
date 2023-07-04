@@ -1,22 +1,11 @@
 #!/usr/bin/env bash
-# Configures an Nginx server so that /redirect_me redirects to another page.
-# The redirection is configured as a "301 Moved Permanently"
+# Script that configures a new Ubuntu machine to redirect a URL
 
 sudo apt-get update
 sudo apt-get install -y nginx
 
-sudo mkdir /etc/nginx/html
-sudo touch /etc/nginx/html/index.html
-echo "Hello World!" > /etc/nginx/html/index.html
-printf %s "server {
-    listen 80;
-    listen [::]:80 default_server;
-    root   /etc/nginx/html;
-    index  index.html index.htm;
-
-    location /redirect_me {
-        return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;
-    }
-}" > /etc/nginx/sites-available/default
+echo "Hello World!" | sudo tee /var/www/html/index.html
+string_for_replacement="server_name _;\n\trewrite ^\/redirect_me https:\/\/github.com\/kahbeer42 permanent;"
+sudo sed -i "s/server_name _;/$string_for_replacement/" /etc/nginx/sites-enabled/default
 
 sudo service nginx restart
