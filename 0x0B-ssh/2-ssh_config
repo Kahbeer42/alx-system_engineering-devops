@@ -5,7 +5,6 @@ Host *
 #   ForwardX11 no
 #   ForwardX11Trusted yes
     PasswordAuthentication no
-    PreferredAuthentications publickey
 #   HostbasedAuthentication no
 #   GSSAPIAuthentication no
 #   GSSAPIDelegateCredentials no
